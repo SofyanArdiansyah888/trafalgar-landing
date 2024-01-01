@@ -57,7 +57,7 @@ const typographyVariant = cva("leading-none", {
         },
         color: {
             default: "text-black",
-            muted: "text-muted",
+            muted: "text-muted opacity-50",
             primary: "text-primary",
             accent: "text-accent",
             error: "text-destructive",
