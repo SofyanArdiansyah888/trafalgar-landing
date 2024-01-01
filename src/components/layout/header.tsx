@@ -1,13 +1,14 @@
 import React from "react";
+import LogoIcon from "@/components/ui/icons/logo-icon";
 
-export default function Header(){
-    return <header className={"container flex justify-between py-8"}>
+export default function Header() {
+    return <header className={"container flex justify-between py-8 items-center"}>
         <div>
-            Logo Here
+            <LogoIcon className={"w-auto h-[32px]"} />
         </div>
 
         <nav>
-            <ul className={"flex gap-4"}>
+            <ul className={"flex gap-6"}>
                 <li>Home</li>
                 <li>Find A Doctor</li>
                 <li>Apps</li>
