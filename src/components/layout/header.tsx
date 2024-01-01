@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Header(){
-    return <header className={"container flex justify-between"}>
+    return <header className={"container flex justify-between py-8"}>
         <div>
             Logo Here
         </div>
