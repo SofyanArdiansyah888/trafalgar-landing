@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import {Button} from "@/components/ui/button";
 
 const pageStyles = {
   color: "#232129",
@@ -139,6 +140,7 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <Button>Testing Button</Button>
       <h1 style={headingStyles}>
         Congratulations
         <br />
