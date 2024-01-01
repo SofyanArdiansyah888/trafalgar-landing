@@ -1,20 +1,14 @@
 import * as React from "react";
-import { cn } from "@/lib/utils";
-import { cva } from "class-variance-authority";
+import {cn} from "@/lib/utils";
+import {cva} from "class-variance-authority";
 
 const TypographyVariant = [
-    "textXS",
-    "textS",
-    "textM",
-    "textL",
-    "textXl",
-    "heading4",
-    "heading3",
-    "heading2",
-    "heading1",
-    "display3",
-    "display2",
-    "display1",
+    "headingLarge", // 48px
+    "headingMedium", // 36px
+    "headingSmall", // 24px
+    "textLarge", // 21px
+    "textMedium", // 18px
+    "textSmall" // 16px
 ] as const;
 const TypographyColor = [
     "primary",
@@ -24,7 +18,6 @@ const TypographyColor = [
     "muted",
 ] as const;
 const TypographyThick = [
-    "bolder",
     "bold",
     "semibold",
     "regular",
@@ -48,21 +41,14 @@ type TypographyComponent = <T extends React.ElementType = "p">(
 const typographyVariant = cva("leading-none", {
     variants: {
         size: {
-            textXS: "text-[10px]",
-            textS: "text-[12px]",
-            textM: "text-[14px]",
-            textL: "text-[16px]",
-            textXl: "text-[18px]",
-            heading4: "text-[18px] md:text-[24px]",
-            heading3: "text-[20px] md:text-[28px]",
-            heading2: "text-[22px] md:text-[32px]",
-            heading1: "text-[24px] md:text-[36px]",
-            display3: "text-[26px] md:text-[48px]",
-            display2: "text-[32px] md:text-[56px]",
-            display1: "text-[34px] md:text-[64px]",
+            headingLarge: "48px",
+            headingMedium: "36px",
+            headingSmall: "24px",
+            textLarge: "21px",
+            textMedium: "18px",
+            textSmall: "16px"
         },
         thick: {
-            bolder: "font-[800]",
             bold: "font-[700]",
             semibold: "font-[600]",
             medium: "font-medium",
@@ -70,11 +56,11 @@ const typographyVariant = cva("leading-none", {
             light: "font-light",
         },
         color: {
-            default: "text-neutral06 dark:text-neutral01",
-            muted: "text-neutral02",
+            default: "text-black",
+            muted: "text-muted",
             primary: "text-primary",
             accent: "text-accent",
-            error: "text-[#E3604F]",
+            error: "text-destructive",
         },
         defaultVariant: {
             size: "textM",
@@ -90,7 +76,7 @@ const Typography: TypographyComponent = React.forwardRef(
     <T extends React.ElementType = "p">(
         {
             as,
-            size = "textM",
+            size = "textMedium",
             color = "default",
             thick = "regular",
             className,
