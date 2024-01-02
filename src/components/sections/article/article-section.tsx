@@ -3,6 +3,7 @@ import Typography from "@/components/ui/typography";
 import ArticleCard, {ArticleCardType} from "@/components/sections/article/article-card";
 import {StaticImage} from "gatsby-plugin-image";
 import VectorIcon2 from "@/components/ui/icons/vector-icon2";
+import {Button} from "@/components/ui/button";
 
 
 const items: ArticleCardType[] = [
@@ -36,7 +37,7 @@ export default function ArticleSection() {
         </div>
         {/*CARD*/}
         <div className={"relative mt-24 px-32"}>
-            <VectorIcon2 className={"absolute right-0"} />
+            <VectorIcon2 className={"absolute right-0"}/>
             <div className={"grid grid-cols-1 lg:grid-cols-3 gap-4"}>
                 {
                     items.map((item, index) => <ArticleCard {...item} key={index}/>)
@@ -44,5 +45,13 @@ export default function ArticleSection() {
             </div>
         </div>
 
+        <div className={"text-center mx-auto mt-24"}>
+            <Button
+                variant={"outline"}
+                radius={"full"}
+                size={"lg"}>
+                View all
+            </Button>
+        </div>
     </section>
 }
