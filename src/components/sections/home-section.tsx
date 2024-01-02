@@ -34,13 +34,11 @@ export default function HomeSection() {
                 Consult today
             </Button>
         </div>
-        <div >
-            <StaticImage
-                src={"../../images/home-illustration.png"}
-                alt={"Home Section Image"}
-                placeholder={"blurred"}
-                layout={"fixed"}
-            />
-        </div>
+        <StaticImage
+            src={"../../images/home-illustration.png"}
+            alt={"Home Section Image"}
+            placeholder={"blurred"}
+            layout={"fixed"}
+        />
     </section>
 }

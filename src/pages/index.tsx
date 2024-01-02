@@ -5,7 +5,7 @@ import HomeSection from "@/components/sections/home-section";
 import ServiceSection from "@/components/sections/service/service-section";
 import ProviderSection from "@/components/sections/provider-section";
 import DownloadSection from "@/components/sections/download-section";
-import ClientSection from "@/components/sections/client/client-section";
+import ClientSection from "@/components/sections/client-section";
 import ArticleSection from "@/components/sections/article/article-section";
 import {StaticImage} from "gatsby-plugin-image";
 
