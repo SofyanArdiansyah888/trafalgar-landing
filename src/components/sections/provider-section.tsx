@@ -6,7 +6,7 @@ import {StaticImage} from "gatsby-plugin-image";
 export default function ProviderSection() {
     return <section className={"flex items-center gap-24"}>
         <div className={"flex-1"}>
-            <StaticImage src={"../../images/provider-image.png"} alt={"Provider Image"} />
+            <StaticImage src={"../../images/provider-illustration.png"} alt={"Provider Image"} />
         </div>
         <div className={"flex-1 text-left"}>
             <div className={"space-y-6"}>

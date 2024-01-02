@@ -36,7 +36,7 @@ export default function HomeSection() {
         </div>
         <div >
             <StaticImage
-                src={"../../images/home-section.png"}
+                src={"../../images/home-illustration.png"}
                 alt={"Home Section Image"}
                 placeholder={"blurred"}
                 layout={"fixed"}
