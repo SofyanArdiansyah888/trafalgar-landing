@@ -41,12 +41,12 @@ type TypographyComponent = <T extends React.ElementType = "p">(
 const typographyVariant = cva("leading-none", {
     variants: {
         size: {
-            headingLarge: "48px",
-            headingMedium: "36px",
-            headingSmall: "24px",
-            textLarge: "21px",
-            textMedium: "18px",
-            textSmall: "16px"
+            headingLarge: "text-[48px]",
+            headingMedium: "text-[36px]",
+            headingSmall: "text-[24px]",
+            textLarge: "text-[21px]",
+            textMedium: "text-[18px]",
+            textSmall: "text-[16px]"
         },
         thick: {
             bold: "font-[700]",

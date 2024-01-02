@@ -11,25 +11,25 @@ export default function Header() {
         <nav>
             <ul className={"flex gap-8 items-center"}>
                 <li>
-                    <Typography thick={"semibold"}> Home</Typography>
+                    <Typography thick={"semibold"} size={'textSmall'}> Home</Typography>
                 </li>
                 <li>
-                    <Typography color={"muted"}>
+                    <Typography color={"muted"} size={'textSmall'}>
                         Find A Doctor
                     </Typography>
                 </li>
                 <li>
-                    <Typography color={"muted"}>
+                    <Typography color={"muted"} size={'textSmall'}>
                         Apps
                     </Typography>
                 </li>
                 <li>
-                    <Typography color={"muted"}>
+                    <Typography color={"muted"} size={'textSmall'}>
                         Testimonials
                     </Typography>
                 </li>
                 <li>
-                    <Typography color={"muted"}>
+                    <Typography color={"muted"} size={'textSmall'}>
                         About Us
                     </Typography>
                 </li>
