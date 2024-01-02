@@ -25,8 +25,6 @@ export default function ProviderSection() {
                     in the solutions we deliver
                 </Typography>
             </div>
-
-
             <Button variant={"outline"} size={"lg"} radius={"full"} className={"mt-8"}>Learn More</Button>
         </div>
     </section>
