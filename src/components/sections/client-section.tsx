@@ -16,7 +16,6 @@ export default function ClientSection() {
     const [api, setApi] = React.useState<CarouselApi>()
     const [current, setCurrent] = React.useState(1)
     const [count, setCount] = React.useState(0)
-    console.log(current)
     React.useEffect(() => {
         if (!api) {
             return
