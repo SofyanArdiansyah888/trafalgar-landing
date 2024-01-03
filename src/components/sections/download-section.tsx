@@ -5,7 +5,7 @@ import DownloadIcon from "@/components/ui/icons/download-icon";
 import {StaticImage} from "gatsby-plugin-image";
 
 export default function DownloadSection() {
-    return <section className={"flex items-center gap-24"}>
+    return <section id={"download"} className={"flex items-center gap-24"}>
         {/*TEXT*/}
         <div>
             <div className={"text-left space-y-4"}>

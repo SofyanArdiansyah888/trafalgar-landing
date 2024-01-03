@@ -26,7 +26,7 @@ const items: ArticleCardType[] = [
     },
 ]
 export default function ArticleSection() {
-    return <section className={"!px-0"}>
+    return <section id={"article"} className={"!px-0"}>
         {/*HEADING*/}
         <div className={"space-y-6"}>
             <Typography as={"h2"} size={"headingMedium"} thick={"semibold"} className={"text-center"}>

@@ -5,7 +5,7 @@ import {StaticImage} from "gatsby-plugin-image";
 
 
 export default function HomeSection() {
-    return <section className={"flex gap-2"}>
+    return <section id={"home"} className={"flex gap-2"}>
         <div className={"flex-1 "}>
             <div className={"space-y-4"}>
                 <Typography

@@ -25,7 +25,7 @@ export default function ClientSection() {
         })
     }, [api])
 
-    return <section>
+    return <section id={"client"}>
         <Carousel
             plugins={[
                 Autoplay({

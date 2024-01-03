@@ -43,7 +43,7 @@ const cards: ServiceCardType[] = [
 ]
 export default function ServiceSection() {
 
-    return <section className={"!px-0"}>
+    return <section id={"service"} className={"!px-0"}>
         {/*HEADING*/}
         <div className={"space-y-8 max-w-4xl text-center mx-auto"}>
             <Typography as={"h1"} size={"headingMedium"} thick={"semibold"}>
