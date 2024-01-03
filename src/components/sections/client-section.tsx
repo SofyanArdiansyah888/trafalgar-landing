@@ -11,6 +11,7 @@ import Typography from "@/components/ui/typography";
 import {StaticImage} from "gatsby-plugin-image";
 import DotsIcon1 from "@/components/ui/icons/dots1-icon";
 import DotsIcon2 from "@/components/ui/icons/dots2-icon";
+import Autoplay from "embla-carousel-autoplay"
 
 export default function ClientSection() {
     const [api, setApi] = React.useState<CarouselApi>()
@@ -29,6 +30,11 @@ export default function ClientSection() {
 
     return <section>
         <Carousel
+            plugins={[
+                Autoplay({
+                    delay: 2000,
+                })
+            ]}
             setApi={setApi}
             opts={{
                 loop: true,
