@@ -16,6 +16,7 @@ const TypographyColor = [
     "default",
     "error",
     "muted",
+    "white"
 ] as const;
 const TypographyThick = [
     "bold",
@@ -61,6 +62,7 @@ const typographyVariant = cva("leading-none", {
             primary: "text-primary",
             accent: "text-accent",
             error: "text-destructive",
+            white: "text-white"
         },
         defaultVariant: {
             size: "textM",
