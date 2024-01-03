@@ -1,7 +1,6 @@
 import React from "react";
 import Typography from "@/components/ui/typography";
 import ArticleCard, {ArticleCardType} from "@/components/sections/article/article-card";
-import {StaticImage} from "gatsby-plugin-image";
 import VectorIcon2 from "@/components/ui/icons/vector-icon2";
 import {Button} from "@/components/ui/button";
 
@@ -9,19 +8,19 @@ import {Button} from "@/components/ui/button";
 const items: ArticleCardType[] = [
     {
         title: "Disease detection, check up in the laboratory",
-        description:"In this case, the role of the health laboratory is very important to do a disease detection...",
+        description: "In this case, the role of the health laboratory is very important to do a disease detection...",
         image: "./images/icon.png",
         link: ""
     },
     {
         title: "Herbal medicines that are safe for consumption",
-        description:"Herbal medicine is very widely used at this time because of its very good for your health...",
+        description: "Herbal medicine is very widely used at this time because of its very good for your health...",
         image: "../images/icon.png",
         link: ""
     },
     {
         title: "Natural care for healthy facial skin",
-        description:"A healthy lifestyle should start from now and also for your skin health. There are some...",
+        description: "A healthy lifestyle should start from now and also for your skin health. There are some...",
         image: "../images/icon.png",
         link: ""
     },
@@ -35,12 +34,13 @@ export default function ArticleSection() {
             </Typography>
             <hr className={"max-w-[80px] border-[1px] mx-auto border-black"}/>
         </div>
-        {/*CARD*/}
+        {/*CARDS*/}
         <div className={"relative mt-24 px-32"}>
             <VectorIcon2 className={"absolute right-0"}/>
             <div className={"grid grid-cols-1 lg:grid-cols-3 gap-4"}>
                 {
-                    items.map((item, index) => <ArticleCard {...item} key={index}/>)
+                    items.map((item, index) =>
+                        <ArticleCard {...item} key={index} />)
                 }
             </div>
         </div>
