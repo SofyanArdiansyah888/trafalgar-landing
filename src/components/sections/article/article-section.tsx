@@ -36,7 +36,7 @@ export default function ArticleSection() {
         </div>
         {/*CARDS*/}
         <div className={"relative mt-24 px-4 "}>
-            <VectorIcon2 className={"absolute hidden lg:block lg:-right-24"}/>
+            <VectorIcon2 className={"absolute hidden lg:block lg:-right-20"}/>
             <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}>
                 {
                     items.map((item, index) =>
