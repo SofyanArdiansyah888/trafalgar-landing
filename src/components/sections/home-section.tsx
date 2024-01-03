@@ -5,21 +5,21 @@ import {StaticImage} from "gatsby-plugin-image";
 
 
 export default function HomeSection() {
-    return <section id={"home"} className={"flex gap-2"}>
-        <div className={"flex-1 "}>
+    return <section id={"home"} className={"grid grid-cols-1 lg:grid-cols-2 gap-2"}>
+        <div className={"text-center lg:text-left"}>
             <div className={"space-y-4"}>
                 <Typography
                     as={"h1"}
                     size={"headingLarge"}
                     thick={"bold"}
-                    className={"max-w-md leading-tight"}
+                    className={"lg:max-w-md leading-tight text-center lg:text-left"}
                 >
                     Virtual healthcare for you
                 </Typography>
                 <Typography
                     as={"h3"}
                     color={"muted"}
-                    className={"max-w-md"}
+                    className={"max-w-md mx-auto lg:mx-0"}
                 >
                     Trafalgar provides progressive, and affordable
                     healthcare, accessible on mobile and online
@@ -38,7 +38,7 @@ export default function HomeSection() {
             src={"../../images/home-illustration.png"}
             alt={"Home Section Image"}
             placeholder={"blurred"}
-            layout={"fixed"}
+            className={"mx-auto max-w-[350px] lg:max-w-full"}
         />
     </section>
 }

@@ -9,7 +9,7 @@ export default function Header() {
             <LogoIcon className={"w-auto h-[32px]"}/>
         </div>
 
-        <nav>
+        <nav className={"hidden lg:block"}>
             <ul className={"flex gap-8 items-center"}>
                 <li>
                     <Typography as={"a"} href={"#home"}  color={"muted"} size={'textSmall'} className={"hover:text-primary"} > Home</Typography>

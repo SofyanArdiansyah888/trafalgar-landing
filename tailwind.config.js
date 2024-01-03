@@ -11,9 +11,6 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       colors: {

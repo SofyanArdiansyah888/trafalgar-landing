@@ -39,11 +39,7 @@
 
 @layer base {
   * {
-    @apply border-border;
     font-family: 'Mulish', serif;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }
 
@@ -52,5 +48,5 @@ section {
 }
 
 section, header, footer{
-  @apply px-6 md:px-32
+  @apply px-6
 }

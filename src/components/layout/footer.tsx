@@ -5,11 +5,11 @@ import DotsIcon2 from "@/components/ui/icons/dots2-icon";
 
 export default function Footer() {
     return <footer
-        className={"py-20 px-32 relative"}
+        className={"py-20 px-4 md:px-32 relative"}
         style={{background: "linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%)"}}
     >
-        <div className={"grid grid-cols-5 gap-12"}>
-            <div className={"col-span-2 space-y-6"}>
+        <div className={"grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-12"}>
+            <div className={"md:order-2 md:col-span-3 lg:col-span-2 space-y-6"}>
                 <div className={"flex gap-3 text-white items-center"}>
                     <div className={"bg-white w-8 h-8 rounded-full text-primary text-center pt-1"}>T</div>
                     <Typography color={"white"} size={"textLarge"} thick={"semibold"}>Trafalgar</Typography>
@@ -27,6 +27,7 @@ export default function Footer() {
                 </div>
             </div>
 
+            {/*COMPANY*/}
             <div className={"space-y-6"}>
                 <Typography as={"div"} color={"white"} thick={"bold"}>Company</Typography>
                 <ul className={"space-y-3"}>
@@ -53,6 +54,7 @@ export default function Footer() {
                 </ul>
             </div>
 
+            {/*REGION*/}
             <div className={"space-y-6"}>
                 <Typography as={"div"} color={"white"} thick={"bold"}>Region</Typography>
                 <ul className={"space-y-3"}>
@@ -79,6 +81,7 @@ export default function Footer() {
                 </ul>
             </div>
 
+            {/*HELP*/}
             <div className={"space-y-6"}>
                 <Typography as={"div"} color={"white"} thick={"bold"}>Help</Typography>
                 <ul className={"space-y-3"}>

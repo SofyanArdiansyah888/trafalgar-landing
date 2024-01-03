@@ -4,12 +4,12 @@ import {Button} from "@/components/ui/button";
 import {StaticImage} from "gatsby-plugin-image";
 
 export default function ProviderSection() {
-    return <section id={"provider"}  className={"flex items-center gap-24"}>
+    return <section id={"provider"}  className={"flex flex-col lg:flex-row items-center gap-24"}>
         <div className={"flex-1"}>
-            <StaticImage src={"../../images/provider-illustration.png"} alt={"Provider Image"} />
+            <StaticImage src={"../../images/provider-illustration.png"} alt={"Provider Image"} className={"mx-auto max-w-[350px] lg:max-w-full"} />
         </div>
-        <div className={"flex-1 text-left"}>
-            <div className={"space-y-6"}>
+        <div className={"flex-1  w-full text-left lg:text-center"}>
+            <div className={"space-y-6 text-left"}>
                 <Typography
                     as={"h2"}
                     size={"headingMedium"}
@@ -25,7 +25,7 @@ export default function ProviderSection() {
                     in the solutions we deliver
                 </Typography>
             </div>
-            <Button variant={"outline"} size={"lg"} radius={"full"} className={"mt-8"}>Learn More</Button>
+            <Button variant={"outline"} size={"lg"} radius={"full"} className={"mt-8 mx-auto md:mx-0"}>Learn More</Button>
         </div>
     </section>
 }

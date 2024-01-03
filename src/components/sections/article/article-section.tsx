@@ -35,9 +35,9 @@ export default function ArticleSection() {
             <hr className={"max-w-[80px] border-[1px] mx-auto border-black"}/>
         </div>
         {/*CARDS*/}
-        <div className={"relative mt-24 px-32"}>
-            <VectorIcon2 className={"absolute right-0"}/>
-            <div className={"grid grid-cols-1 lg:grid-cols-3 gap-4"}>
+        <div className={"relative mt-24 px-4 "}>
+            <VectorIcon2 className={"absolute hidden lg:block lg:-right-24"}/>
+            <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}>
                 {
                     items.map((item, index) =>
                         <ArticleCard {...item} key={index} />)

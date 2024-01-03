@@ -50,7 +50,7 @@ export default function ServiceSection() {
                 Our Services
             </Typography>
             <hr className={"max-w-[80px] border-[1px] mx-auto border-black"}/>
-            <Typography as={"h4"} size={"textSmall"} color={"muted"}>
+            <Typography as={"h4"} size={"textSmall"} color={"muted"} className={"max-w-md lg:max-w-2xl mx-auto"}>
                 We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo
                 treatment with our highly qualified doctors you can consult with us which type of service is suitable
                 for your health
@@ -60,12 +60,12 @@ export default function ServiceSection() {
         {/*CARDLIST*/}
         <div className={"relative"}>
 
-            <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 z-50 px-32"}>
+            <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 z-50 px-4 "}>
                 {
                     cards.map((card, index) => <ServiceCard key={index} {...card} />)
                 }
             </div>
-            <VectorIcon className={"absolute -left-[32px] top-[10%] -z-10"}/>
+            <VectorIcon className={"absolute -left-[32px] top-[10%] -z-10 w-[200px] lg:w-full"}/>
         </div>
 
         <div className={"text-center mx-auto"}>

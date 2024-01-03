@@ -5,7 +5,7 @@ import DotsIcon2 from "@/components/ui/icons/dots2-icon";
 import React from "react";
 
 export default function ClientCard() {
-    return <div className={"rounded-2xl py-16 px-32 relative"}
+    return <div className={"rounded-2xl py-6 lg:py-16 px-6 lg:px-32 relative"}
                 style={{background: "linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%)"}}
     >
         <div className={"text-center mx-auto space-y-4 mb-16"}>
@@ -15,7 +15,7 @@ export default function ClientCard() {
             <hr className={"max-w-[80px] border-[1px]  border-white mx-auto"}/>
         </div>
 
-        <div className={"grid grid-cols-2  items-center"}>
+        <div className={"grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-0  items-center"}>
             <div className={"flex gap-8 items-center"}>
                 <StaticImage
                     src={"../../../images/profil.png"}
